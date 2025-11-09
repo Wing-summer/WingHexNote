@@ -11,7 +11,7 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 
 set(CMAKE_INCLUDE_CURRENT_DIR TRUE)
 
-option(TEST_MODE TRUE)
+option(WINGHEX_TEST_MODE TRUE)
 
 find_package(
     Qt6
@@ -47,7 +47,7 @@ add_library(
 
 set_target_properties(WingHexNote PROPERTIES SUFFIX ".wingplg")
 
-if(TEST_MODE)
+if(WINGHEX_TEST_MODE)
     set(WINGHEX_PATH "${CMAKE_BINARY_DIR}")
 
     set(WINGHEX_PLUGIN_PATH "${WINGHEX_PATH}/plugin")
