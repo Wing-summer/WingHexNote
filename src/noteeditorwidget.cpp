@@ -20,8 +20,9 @@
 #include <QLabel>
 #include <QVBoxLayout>
 
-NoteEditorWidget::NoteEditorWidget(QWidget *parent)
-    : WingHex::WingEditorViewWidget(parent) {
+NoteEditorWidget::NoteEditorWidget(
+    const WingHex::WingEditorViewWidget::Creator *creator, QWidget *parent)
+    : WingHex::WingEditorViewWidget(creator, parent) {
     auto layout = new QVBoxLayout(this);
     auto lbl = new QLabel(tr("WingHexNote"), this);
     lbl->setAlignment(Qt::AlignCenter);
@@ -39,7 +40,7 @@ NoteEditorWidget::NoteEditorWidget(QWidget *parent)
 }
 
 WingHex::WingEditorViewWidget *NoteEditorWidget::clone() {
-    auto editor = new NoteEditorWidget;
+    auto editor = new NoteEditorWidget(this->creator());
     editor->_edit->setDocument(this->_edit->document());
     return editor;
 }

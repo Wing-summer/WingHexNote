@@ -26,7 +26,7 @@ class NoteEditorWidget : public WingHex::WingEditorViewWidget {
     Q_OBJECT
 
 public:
-    NoteEditorWidget(QWidget *parent = nullptr);
+    NoteEditorWidget(const Creator *creator, QWidget *parent = nullptr);
 
 public:
     virtual WingHex::WingEditorViewWidget *clone() override;

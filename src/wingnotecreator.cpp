@@ -28,5 +28,5 @@ QString WingNoteCreator::name() const { return tr("WingHexNote"); }
 QString WingNoteCreator::id() const { return QStringLiteral("WingHexNote"); }
 
 WingHex::WingEditorViewWidget *WingNoteCreator::create(QWidget *parent) const {
-    return new NoteEditorWidget(parent);
+    return new NoteEditorWidget(this, parent);
 }

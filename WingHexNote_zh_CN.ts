@@ -4,12 +4,12 @@
 <context>
     <name>NoteEditorWidget</name>
     <message>
-        <location filename="src/noteeditorwidget.cpp" line="26"/>
+        <location filename="src/noteeditorwidget.cpp" line="27"/>
         <source>WingHexNote</source>
         <translation>羽云笔记</translation>
     </message>
     <message>
-        <location filename="src/noteeditorwidget.cpp" line="70"/>
+        <location filename="src/noteeditorwidget.cpp" line="71"/>
         <source>Length: %1</source>
         <translation>长度：%1</translation>
     </message>
