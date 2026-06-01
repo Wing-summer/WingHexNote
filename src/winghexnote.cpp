@@ -33,6 +33,10 @@ const QString WingHexNote::pluginComment() const {
     return tr("A note plugin for WingHexExplorer2");
 }
 
+QIcon WingHexNote::pluginIcon() const {
+    return QIcon(QStringLiteral(":/WingHexNote/img/notepad.png"));
+}
+
 QString WingHexNote::retranslate(const QString &str) {
     return QApplication::tr(str.toLatin1());
 }

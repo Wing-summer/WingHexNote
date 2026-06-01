@@ -1,5 +1,5 @@
 <RCC>
-    <qresource prefix="/">
+    <qresource prefix="/WingHexNote">
         <file>img/notepad.png</file>
     </qresource>
 </RCC>

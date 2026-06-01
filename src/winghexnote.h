@@ -37,6 +37,7 @@ public:
 public:
     virtual const QString pluginName() const override;
     virtual const QString pluginComment() const override;
+    virtual QIcon pluginIcon() const override;
 
     virtual QString retranslate(const QString &str) override;
 
