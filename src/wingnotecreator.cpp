@@ -20,7 +20,7 @@
 #include "noteeditorwidget.h"
 
 QIcon WingNoteCreator::icon() const {
-    return QIcon(QStringLiteral("://img/notepad.png"));
+    return QIcon(QStringLiteral(":/WingHexNote/img/notepad.png"));
 }
 
 QString WingNoteCreator::name() const { return tr("WingHexNote"); }
